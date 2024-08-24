@@ -1,0 +1,6 @@
+root_dir = "."
+tmp_dir = "tmp"
+build_cmd = "go build -o ./tmp/main ."
+exclude_dir = ["assets", "vendor"]
+exclude_file = ["*.md", "*.tmp"]
+cmd = "./tmp/main"
