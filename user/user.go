@@ -6,7 +6,8 @@ type User struct {
 	Password string
 }
 
-type NewUser struct {
-	Email    string `binding:"required"`
+type UserData struct {
+	ID       int64  `json:"-"`
+	Email    string `binding:"required,email"`
 	Password string `binding:"required"`
 }
